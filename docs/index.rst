@@ -15,8 +15,6 @@ Como instalar
 ====================
 Neste plugin, foram feitos testes na distribuição CENTOS, versão 7. Caso você utilize uma distribuição diferente, reveja a síntaxe de alguns comandos apresentados aqui. 
 
-Segue abaixo um exemplo de instalação
-
   yum groupinstall 'Development Tools'
   
   yum install nmap mod_ssl openssl openssl-devel zip unzip zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel libxml2-devel   libxslt-devel python-setuptools wget
