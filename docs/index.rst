@@ -48,4 +48,20 @@ Criação do arquivo sources.cfg (Configuração necessária para inclusão dest
   [sources]
   
   plone.custom = git https://github.com/wagnerwar/plone.custom.git
+  
+
+Edição do arquivo buildout.cfg
+
+Inclusão da referência do plugin na propriedade ‘extends’, para que o buildout consiga ler as configurações do arquivo recém-criado:
+
+  extends =
+  
+  http://dist.plone.org/release/4.3.3/versions.cfg
+  
+  sources.cfg
+  
+  
+
+
+  
 
