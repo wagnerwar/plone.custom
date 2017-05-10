@@ -34,6 +34,7 @@ Baixar o projeto do git (plone.limpo)
   python bootstrap.py
   
 Criação do arquivo sources.cfg (Configuração necessária para inclusão deste plugin na instalação)
+
   [buildout]
   
   extensions += mr.developer
