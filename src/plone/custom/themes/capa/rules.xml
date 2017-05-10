@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Note:
+
+        This is an example theme only. It is reasonably complete, but not
+        perfect, and not tested in all browsers. It is intended only to show
+        how a reasonably complete theme can be constructed.
+
+        See ``theme.html`` for the page layout and placeholders, ``theme.css``
+        and ``bootstrap.css`` for the basic theme CSS (based on Twitter
+        Bootstrap), and ``ploneui.css``, which contains CSS stolen from Plone's
+        default Sunburst theme to style Plone-specific elements.
+
+        -->
+
+    <rules css:if-content="#visual-portal-wrapper">
+
+        <theme href="theme.html" />
+
+        <!-- Head elements -->
+        <replace css:theme="html head title" css:content="html head title" />
+        <after css:theme-children="html head" css:content="html head base" />
+        <after css:theme-children="html head" css:content="html head script" />
+
+        <!-- Logo -->
+        <replace css:theme="#logo h1 a" css:content="#portal-logo" />
+
+        <!-- Tabs -->
+        <replace css:theme-children="#nav" css:content="#portal-globalnav" />
+        
+        <!-- Personal tools -->
+        <replace css:theme-children="#persona" css:content="#portal-personaltools" />
+        <!-- Search -->
+
+        <!-- Edit bar -->
+        
+        <!-- Portal messages -->
+
+        <!-- Main columns -->
+         <replace css:theme-children="#content" css:content-children="#portal-column-content" />
+         <replace css:theme-children="#sidebar" css:content-children="#portal-column-one" />
+         <replace css:theme-children="#featured" css:content-children="#nio" />
+         <replace css:theme-children="#novo_tipo" css:content-children="#novo_tipo" />
+        <!-- Footer -->
+        <replace css:theme-children="#footer" css:content-children="#portal-footer" />
+        nio
+        featured
+
+
+    </rules>
+           <!-- Portlets manager -->
+       <xsl:template match="div[@class='managePortletsLink']">
+        <xsl:copy>
+            <xsl:attribute name="class">managePortletsLink button</xsl:attribute>
+            <xsl:apply-templates select="node()" />
+        </xsl:copy>
+    </xsl:template>
+
+</rules>
