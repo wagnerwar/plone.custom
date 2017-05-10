@@ -32,3 +32,19 @@ Baixar o projeto do git (plone.limpo)
   wget https://raw.githubusercontent.com/buildout/buildout/master/bootstrap/bootstrap.py
   
   python bootstrap.py
+  
+Criação do arquivo sources.cfg (Configuração necessária para inclusão deste plugin na instalação)
+  [buildout]
+  
+  extensions += mr.developer
+  
+  always-checkout = force
+  
+  auto-checkout =
+  
+      plone.custom
+      
+  [sources]
+  
+  plone.custom = git https://github.com/wagnerwar/plone.custom.git
+
