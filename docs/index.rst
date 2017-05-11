@@ -56,9 +56,9 @@ Inclusão da referência do plugin na propriedade ‘extends’, para que o buil
 
   extends =
   
-  http://dist.plone.org/release/4.3.3/versions.cfg
+   http://dist.plone.org/release/4.3.3/versions.cfg
   
-  sources.cfg
+   sources.cfg
   
   
 
