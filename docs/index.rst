@@ -132,10 +132,15 @@ Caso queira analisar um exemplo de como funciona o XSLT, recomendo dar uma olhad
 
 Estrutura de diretórios e arquivos:
   assets/
+  
   images/
+  
   theme.html
+  
   rules.xml
+  
   preview.png
+  
   manifest.cfg
 
 
