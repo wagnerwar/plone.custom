@@ -87,6 +87,8 @@ Caso tenha funcionado tudo bem, você pode testar abrindo seu navegador, e acess
 
 Se estiver funcionando, você deverá ver algo conforme abaixo:
 
+![image](img/imagem_a.png)
+
 
 
 
