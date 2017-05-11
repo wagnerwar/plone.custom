@@ -120,7 +120,7 @@ Para habilitá-lo, acesse o painel de configuração do site, conforme indicaç�
 
 .. image:: img/imagem_f.png
 
-Em seguida, vá em Complementos:
+Em seguida, selecione Temas:
 
 .. image:: img/imagem_j.png
 
