@@ -124,6 +124,24 @@ Em seguida, selecione Temas:
 
 .. image:: img/imagem_j.png
 
+Através de um mecanismo chamado Diazo, é possível, por exemplo, que você, com poucas linhas de código consiga refazer todo um leiaute do portal. 
+O diazo permite que, de forma simplificada, você possa transformar um simples index.html no próprio leiaute padrão do portal. Para entender como funciona este mecanismo, vamos entender a estrutura de arquivos e diretórios do tema customizado do exemplo.
+O Diazo tem suporte ao XSLT, que é uma espécie de linguagem de apresentação de documentos.
+
+Caso queira analisar um exemplo de como funciona o XSLT, recomendo dar uma olhada no seguinte exemplo: https://github.com/wagnerwar/xsl.
+
+Estrutura de diretórios e arquivos:
+  assets/
+  images/
+  theme.html
+  rules.xml
+  preview.png
+  manifest.cfg
+
+
+
+
+
 
 
 
