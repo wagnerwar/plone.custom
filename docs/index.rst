@@ -60,6 +60,48 @@ Inclusão da referência do plugin na propriedade ‘extends’, para que o buil
   
      sources.cfg
   
+Edição na diretivas eggs:
+
+  eggs =
+  
+      Plone
+      
+      plone.app.upgrade
+      
+      plone.custom
+
+Edição no arquivo setup.py (Inclusão da propriedade ‘install_requires’, dentro da função setup):
+
+  setup(name='PloneClean',
+    ...
+  install_requires=[
+    'plone.custom'
+    ]
+  )
+
+bin/buildout -vvvc buildout.cfg
+
+bin/instance fg
+
+Caso tenha funcionado tudo bem, você pode testar abrindo seu navegador, e acessar o seguinte endereço: http://localhost:8080/. Por padrão, ele funciona na porta 8080.
+
+Se estiver funcionando, você deverá ver algo conforme abaixo:
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
   
 
 
