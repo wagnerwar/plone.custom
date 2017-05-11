@@ -89,6 +89,36 @@ Se estiver funcionando, você deverá ver algo conforme abaixo:
 
 .. image:: img/imagem_a.png
 
+Por padrão, são estes os dados de acesso:
+
+  Username: admin
+  Password: admin	
+	
+Aparecerá um formulário semelhante á este:
+
+.. image:: img/imagem_b.png
+
+Preencha os campos, e, no campo Complementos, selecione apenas o primeiro ítem: Tipos de conteúdo Dexterity
+
+.. image:: img/imagem_c.png
+
+Depois clique em Criar site Plone.
+
+.. image:: img/imagem_d.png
+
+Se tudo funcionar bem, aparecerá uma tela semelhante á esta:
+
+.. image:: img/imagem_e.png
+
+
+
+
+
+
+
+
+
+
 
 
 
