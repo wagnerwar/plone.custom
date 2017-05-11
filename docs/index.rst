@@ -110,6 +110,29 @@ Se tudo funcionar bem, aparecerá uma tela semelhante á esta:
 
 .. image:: img/imagem_e.png
 
+====================
+Habilitar template personalizado
+====================
+
+Este plugin tem uma pasta chamada 'themes', que contém o tema personalizado. Porém, o mesmo, por padrão, não estará habilitado, estando apenas disponível para ser habilitado.
+
+Para habilitá-lo, acesse o painel de configuração do site, conforme indicação abaixo, clicando em 'Configuração do Site':
+
+.. image:: img/imagem_f.png
+
+Em seguida, vá em Complementos:
+
+.. image:: img/imagem_j.png
+
+
+
+
+
+
+
+
+
+
 
 
 
