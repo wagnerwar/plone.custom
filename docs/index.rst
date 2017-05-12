@@ -137,11 +137,29 @@ Estrutura de diretórios e arquivos:
   
   theme.html
   
-  rules.xml
+  rules.xml (Mecanismo que permite encaixar 'pedaços' da aplicação no tema)
   
-  preview.png
+  preview.png (Imagem de capa do tema)
   
-  manifest.cfg
+  manifest.cfg (Metadados do tema, como nome e descrição)
+  
+Os 4 primeiros ítens de cima são apenas o suficiente para criar um tema para o portal. Segue abaixo a página HTML do tema:
+  
+.. image:: img/imagem_k.png
+  
+Se você for abrir o arquivo ‘theme.html’ verá uma tela como demonstrado acima. 
+  
+Os outros 3 arquivos são próprios do tema (Arquivos CSS e JS para estilização e funcionalidade do tema).
+
+==============
+rules.xml
+==============
+  
+  
+  
+  
+  
+  
 
 
 
