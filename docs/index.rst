@@ -189,17 +189,17 @@ A síntaxe de construção de cada regra, geralmente, obedece o seguinte padrão
 
   <COMANDO css:theme/theme-children="" css:content/content-children="" />
 
-  'COMANDO' pode ser qualquer instrução definida na seguinte documentação (http://docs.diazo.org/en/latest/).
+    'COMANDO' pode ser qualquer instrução definida na seguinte documentação (http://docs.diazo.org/en/latest/).
 
-  'css:theme': Permite fazer operação com o nó especificado
+    'css:theme': Permite fazer operação com o nó especificado
 
-  'css:theme-children': Permite fazer operação com os elementos-filho do nó especificado
+    'css:theme-children': Permite fazer operação com os elementos-filho do nó especificado
 
-  'css:content': Permite acessar o conteúdo do nó especificado
+    'css:content': Permite acessar o conteúdo do nó especificado
 
-  'css:content-children': Permite acessar os elementos-filho do nó especificado. 
+    'css:content-children': Permite acessar os elementos-filho do nó especificado. 
 
-  'css:if-content': É uma condicional, definida como critério para aplicação ou não da regra
+    'css:if-content': É uma condicional, definida como critério para aplicação ou não da regra
   
 Para mais detalhes, acesse: http://docs.diazo.org/en/latest/basic.html.
 
