@@ -124,7 +124,14 @@ Em seguida, selecione Temas:
 
 .. image:: img/imagem_j.png
 
-Através de um mecanismo chamado Diazo, é possível, por exemplo, que você, com poucas linhas de código consiga refazer todo um leiaute do portal. 
+Logo após habilitar o tema, verá que o leiaute do portal mudou, e, graças ás regras do arquivo rules.xml, toda a funcionalidade do portal foi mantida, mudando apenas a interface.
+
+==================
+Diazo
+==================
+
+Isto funciona través de um mecanismo chamado Diazo, que permite ao desginer alterar o leiaute, com poucas linhas de código.
+
 O diazo permite que, de forma simplificada, você possa transformar um simples index.html no próprio leiaute padrão do portal. Para entender como funciona este mecanismo, vamos entender a estrutura de arquivos e diretórios do tema customizado do exemplo.
 O Diazo tem suporte ao XSLT, que é uma espécie de linguagem de apresentação de documentos.
 
@@ -155,9 +162,59 @@ Os outros 3 arquivos são próprios do tema (Arquivos CSS e JS para estilizaçã
 rules.xml
 ==============
   
+Exenplificando o papel do rules.xml, se considerarmos o seguinte trecho:
+
+  <replace css:theme="html head title" css:content="html head title" />
+
+O que acontece? Simplesmente, o título definido no tema é substituído pelo título definido no portal (Isto porquê, uma vez aplicado o tema no portal, todo a parte de HTML do site é substituído pela do tema ).
+
+  <replace css:theme-children="#persona" css:content="#portal-personaltools" />
+  
+Considerando a regra acima, todo o conteúdo da div '#portal-personaltools' do portal sobrescreverá os elementos da div '#persona', definida no template.
+
+No trecho abaixo, é verificado se existe alguma div com class = 'managePortletsLink'. Se sim, adicionamos a class 'button' no elemento:
+
+  <xsl:template match="div[@class='managePortletsLink']">
+  <xsl:copy>
+  <xsl:attribute name="class">managePortletsLink button</xsl:attribute>
+  <xsl:apply-templates select="node()" />
+  </xsl:copy>
+  </xsl:template>
+  
+A marcação "xsl:apply-templates" indica que a alteração se aplicará aos elementos-filho do filtro filtrado.
+
+A linguagem utilizada, para a funcionalidade acima, é o XSLT, que é uma espécie de linguagem de marcação usada para apresentação. É uma espécie de estilização CSS, só que em XML.
+
+A síntaxe de construção de cada regra, geralmente, obedece o seguinte padrão:
+
+  <COMANDO css:theme/theme-children="" css:content/content-children="" />
+
+  'COMANDO' pode ser qualquer instrução definida na seguinte documentação (http://docs.diazo.org/en/latest/).
+
+  'css:theme': Permite fazer operação com o nó especificado
+
+  'css:theme-children': Permite fazer operação com os elementos-filho do nó especificado
+
+  'css:content': Permite acessar o conteúdo do nó especificado
+
+  'css:content-children': Permite acessar os elementos-filho do nó especificado. 
+
+  'css:if-content': É uma condicional, definida como critério para aplicação ou não da regra
+  
+Para mais detalhes, acesse: http://docs.diazo.org/en/latest/basic.html.
+
+
+
+
+
+
   
   
-  
+
+
+
+
+
   
   
 
