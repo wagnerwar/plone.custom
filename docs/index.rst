@@ -126,11 +126,13 @@ Em seguida, selecione Temas:
 
 Logo após habilitar o tema, verá que o leiaute do portal mudou, e, graças ás regras do arquivo rules.xml, toda a funcionalidade do portal foi mantida, mudando apenas a interface.
 
+.. image:: img/imagem_res.png
+
 ==================
 Diazo
 ==================
 
-Isto funciona través de um mecanismo chamado Diazo, que permite ao desginer alterar o leiaute, com poucas linhas de código.
+A transformação acima funciona través de um mecanismo chamado Diazo, que permite ao desginer alterar o leiaute, com poucas linhas de código.
 
 O diazo permite que, de forma simplificada, você possa transformar um simples index.html no próprio leiaute padrão do portal. Para entender como funciona este mecanismo, vamos entender a estrutura de arquivos e diretórios do tema customizado do exemplo.
 O Diazo tem suporte ao XSLT, que é uma espécie de linguagem de apresentação de documentos.
